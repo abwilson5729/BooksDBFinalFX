@@ -20,6 +20,7 @@ import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.Label;
+import javafx.scene.control.Slider;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -74,9 +75,13 @@ public class Controller {
   @FXML
   private Button appearButton;
 
+  //circle that changes colors when mouse moves over it
   @FXML
   private Shape circle;
 
+  //slider to determine background opacity
+  @FXML
+  private Slider slider;
   //When clicked the appear button set the hiddenImage opacity to 1
   // and sets the text of the appear button to say disappear.
   // Clicking disappear will set the text back to appear and the opacity back to 0.
@@ -89,6 +94,13 @@ public class Controller {
       hiddenImage.setOpacity(0.0);
       appearButton.setText("Appear");
     }
+  }
+
+  //changes the background opacity based on the slider
+  @FXML
+  void backgroundOpacity(ActionEvent event){
+    Double op = slider.getValue();
+    circle.setOpacity(op);
   }
 
   //This takes the color given by the colorPicker and set the background color to that color.
@@ -205,4 +217,5 @@ public class Controller {
     ft.setCycleCount(Timeline.INDEFINITE);
     ft.play();
   }
+
 }
