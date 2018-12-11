@@ -28,7 +28,14 @@ This was created for COP 3003 as a year end project.
 
 ## History
 
-V.1.0.0
+V.1.0.6 Added CSS scripts
+
+V.1.0.5 Added Working Demonstration GIF
+V.1.0.4 Added comments to all files
+V.1.0.3 Added Image and button to show image
+V.1.0.2 Added Color picker element to determine background color
+V.1.0.1 Added delete record and update database function
+V.1.0.0 Initial Release, allows for input and read of database
 
 ## Key Programming Concepts Utilized
 
@@ -43,5 +50,5 @@ V.1.0.0
 * Scenebuilder
 
 ## Grading
- * [Grading Rubric](https://www.google.com)
+ * [Grading Rubric](https://docs.google.com/spreadsheets/d/11ZnsCrG4qwPAeEa2Adm8mcNdT31ZSNbF-kJ6Tr8JKTg/edit?usp=sharing)
 
