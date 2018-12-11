@@ -1,4 +1,4 @@
-# Project Title
+# JavaFX Database Final Project
 
 This project connects to a database and allows users to view the names in the database 1 by 1. <br />
 It also allows the users to add or delete names from the database's list. <br />
