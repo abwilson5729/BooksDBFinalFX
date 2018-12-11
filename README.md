@@ -42,3 +42,6 @@ V.1.0.0
   * Color Picker
 * Scenebuilder
 
+## Grading
+ * [Grading Rubric](https://www.google.com)
+
