@@ -1,0 +1,16 @@
+.root {
+  -fx-background-color: White;
+}
+
+.button {
+  -fx-background-color: linear-gradient(red, yellow);
+}
+
+.button:hover {
+  -fx-background-color: linear-gradient(to bottom right, blue, gray);
+  -fx-text-fill: whitesmoke;
+}
+
+.text-field:selected {
+  -fx-background-color: purple;
+}

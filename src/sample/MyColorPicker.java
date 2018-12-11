@@ -18,6 +18,7 @@ public class MyColorPicker extends Application {
 
     primaryStage.setTitle("colorPicker");
     primaryStage.setScene(scene);
+    scene.getStylesheets().add("myStyle.css");
     primaryStage.show();
   }
 
