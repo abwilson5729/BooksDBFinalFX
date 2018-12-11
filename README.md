@@ -27,15 +27,15 @@ This was created for COP 3003 as a year end project.
 * Professor Vanselow
 
 ## History
+V.1.0.7 Added Circle shape and animated the fill<br />
 
-V.1.0.6 Added CSS scripts
-
-V.1.0.5 Added Working Demonstration GIF
-V.1.0.4 Added comments to all files
-V.1.0.3 Added Image and button to show image
-V.1.0.2 Added Color picker element to determine background color
-V.1.0.1 Added delete record and update database function
-V.1.0.0 Initial Release, allows for input and read of database
+V.1.0.6 Added CSS scripts<br />
+V.1.0.5 Added Working Demonstration GIF<br />
+V.1.0.4 Added comments to all files<br />
+V.1.0.3 Added Image and button to show image<br />
+V.1.0.2 Added Color picker element to determine background color<br />
+V.1.0.1 Added delete record and update database function<br />
+V.1.0.0 Initial Release, allows for input and read of database<br />
 
 ## Key Programming Concepts Utilized
 
