@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 public class MyColorPicker extends Application {
 
-  //test file for how the Color Picker works. This file is not used in the final product
+  //test file for how the Color Picker works. This file is not used in the final product.
   @Override
   public void start(Stage primaryStage) {
     VBox box = new VBox();
