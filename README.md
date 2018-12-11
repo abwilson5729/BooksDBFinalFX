@@ -11,28 +11,6 @@ This was created for COP 3003 as a year end project.
 
 ![Sample GIF](https://github.com/abwilson5729/BooksDBFinalFX/blob/master/working.gif) 
 
-## Documentation
-
-Create a docs folder in your project. Generate JavaDoc in your IDE. Change repository settings (using Settings at top of page) to use GitHub Pages with your docs folder. Add a link to the javadoc index.html file with this markdown: \[Text to appear]\(URL) <br />
-The URL will be YourGitHubUserName.github.io/YourRepositoryName/foldername/filename<br /> 
-Do not include the docs folder name in your URL. <br />
-Sample: \[JavaDoc]\(https://pv-cop.github.io/PV-README-TEMPLATE/javadoc/index.html) <br /> <br />
-[JavaDoc](https://pv-cop.github.io/PV-README-TEMPLATE/javadoc/index.html)
-
-## Diagrams
-
-Such as a class diagram. <br /> 
-The markdown is  \!\[Alt text\]\(relative/path/to/img.png) <br />
- ![Sample Image](docs/9919.png)
-
-## Getting Started
-
-Instructions to get a copy of the project up and running on someone's local machine for development and testing purposes.
-<br />
-Note for real project: You want to be able to share your project and enable collaboration. 
-<br />
-Note for school project: You want a potential client or hirer to be able to run your program. 
-
 ## Built With
 
 * JAVA 1.8.0_60
