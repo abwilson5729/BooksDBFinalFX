@@ -1,5 +1,6 @@
 package sample;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -12,8 +13,18 @@ import java.sql.Statement;
 import java.util.Properties;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.geometry.Insets;
+import javafx.scene.control.Button;
+import javafx.scene.control.ColorPicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 
 public class Controller {
 
@@ -32,6 +43,34 @@ public class Controller {
     @FXML
     private TextField txtLast;
 
+    @FXML
+    private ColorPicker colorPicker;
+
+    @FXML
+    private GridPane backgroundPage;
+
+    @FXML
+    private ImageView hiddenImage;
+
+    @FXML
+    private Button  appearButton;
+
+    @FXML
+    void imageAppear(ActionEvent event){
+        if (hiddenImage.getOpacity() == 0) {
+            hiddenImage.setOpacity(1);
+            appearButton.setText("Disappear");
+        } else {
+            hiddenImage.setOpacity(0.0);
+            appearButton.setText("Appear");
+        }
+    }
+    @FXML
+    void changeBackground(ActionEvent event){
+        Color color = colorPicker.getValue();
+        backgroundPage.setStyle("-fx-background-color: " + String.format( "#%02X%02X%02X", (int)( color.getRed() * 255 ),
+                (int)( color.getGreen() * 255 ), (int)( color.getBlue() * 255 )));
+    }
     @FXML
     void createRecord(ActionEvent event) {
         String INSERT_QUERY = String.format("INSERT INTO AUTHORS(firstName, lastName)"
@@ -99,6 +138,7 @@ public class Controller {
                 lblFirst.getText(), lblLast.getText());
         connectAndExecute(UPDATE_QUERY);
     }
+
 
     void connectAndExecute(String query) {
         Properties props = new Properties();

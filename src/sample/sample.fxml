@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane alignment="center" hgap="10" style="-fx-background-color: darkred;" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane fx:id="backgroundPage" alignment="center" hgap="10" style="-fx-background-color: darkred;" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <rowConstraints>
         <RowConstraints minHeight="10.0" prefHeight="30.0" />
         <RowConstraints minHeight="10.0" prefHeight="30.0" />
@@ -18,7 +21,7 @@
       <RowConstraints minHeight="5.0" prefHeight="10.0" />
     </rowConstraints>
     <columnConstraints>
-        <ColumnConstraints minWidth="10.0" prefWidth="10.0" />
+        <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
         <ColumnConstraints minWidth="10.0" prefWidth="200.0" />
         <ColumnConstraints minWidth="10.0" prefWidth="200.0" />
         <ColumnConstraints minWidth="10.0" prefWidth="10.0" />
@@ -41,5 +44,12 @@
       <Label alignment="BASELINE_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="100.0" text="Last Name" GridPane.columnIndex="2" GridPane.rowIndex="3" />
       <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="98.0" text="Enter First Name:" GridPane.columnIndex="1" GridPane.rowIndex="4" />
       <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="101.0" text="Enter Last Name:" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <ColorPicker fx:id="colorPicker" onAction="#changeBackground" GridPane.rowIndex="1" />
+      <ImageView fx:id="hiddenImage" fitHeight="94.0" fitWidth="102.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+         <image>
+            <Image url="@/download.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="appearButton" alignment="CENTER" mnemonicParsing="false" onAction="#imageAppear" text="Appear" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
     </children>
 </GridPane>
