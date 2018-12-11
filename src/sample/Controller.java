@@ -12,6 +12,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 
+import javafx.animation.FillTransition;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
@@ -26,6 +28,9 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
+import javafx.scene.shape.Shape;
+import javafx.util.Duration;
+import javax.swing.Action;
 
 public class Controller {
 
@@ -68,6 +73,9 @@ public class Controller {
   // the text of this button changes accordingly.
   @FXML
   private Button appearButton;
+
+  @FXML
+  private Shape circle;
 
   //When clicked the appear button set the hiddenImage opacity to 1
   // and sets the text of the appear button to say disappear.
@@ -190,5 +198,11 @@ public class Controller {
       sqlExcept.printStackTrace();
     }
 
+  }
+
+  public void animateCircle() {
+    FillTransition ft = new FillTransition(Duration.millis(3000), circle, Color.RED, Color.BLUE);
+    ft.setCycleCount(Timeline.INDEFINITE);
+    ft.play();
   }
 }

@@ -9,10 +9,14 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <GridPane fx:id="backgroundPage" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
         <RowConstraints minHeight="10.0" prefHeight="30.0" />
         <RowConstraints minHeight="10.0" prefHeight="30.0" />
         <RowConstraints minHeight="10.0" prefHeight="30.0" />
@@ -27,30 +31,31 @@
         <ColumnConstraints minWidth="10.0" prefWidth="10.0" />
     </columnConstraints>
     <children>
-        <Button mnemonicParsing="false" onAction="#updateRecord" prefWidth="125.0" text="Update Database" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-        <Label fx:id="lblFirst" prefHeight="17.0" prefWidth="99.0" style="-fx-background-color: teal;" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
-        <Label fx:id="lblLast" prefHeight="17.0" prefWidth="100.0" style="-fx-background-color: teal;" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
-        <Button mnemonicParsing="false" onAction="#nextRecord" prefWidth="125.0" text="Read Next Entry" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-        <Button mnemonicParsing="false" onAction="#createRecord" prefHeight="26.0" prefWidth="125.0" text="Create New Entry" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-        <Button mnemonicParsing="false" onAction="#deleteRecord" prefWidth="125.0" text="Delete Entry" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-        <TextField fx:id="txtFirst" maxWidth="100.0" prefHeight="26.0" prefWidth="168.0" promptText="First Name" stylesheets="@../myStyle.css" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
-        <TextField fx:id="txtLast" maxWidth="100.0" promptText="Last Name" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
-        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="468.0" text="Database" GridPane.columnSpan="2147483647">
+        <Button mnemonicParsing="false" onAction="#updateRecord" prefWidth="125.0" text="Update Database" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+        <Label fx:id="lblFirst" prefHeight="17.0" prefWidth="99.0" style="-fx-background-color: teal;" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+        <Label fx:id="lblLast" prefHeight="17.0" prefWidth="100.0" style="-fx-background-color: teal;" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+        <Button mnemonicParsing="false" onAction="#nextRecord" prefWidth="125.0" text="Read Next Entry" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+        <Button mnemonicParsing="false" onAction="#createRecord" prefHeight="26.0" prefWidth="125.0" text="Create New Entry" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+        <Button mnemonicParsing="false" onAction="#deleteRecord" prefWidth="125.0" text="Delete Entry" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+        <TextField fx:id="txtFirst" maxWidth="100.0" prefHeight="26.0" prefWidth="168.0" promptText="First Name" stylesheets="@../myStyle.css" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
+        <TextField fx:id="txtLast" maxWidth="100.0" promptText="Last Name" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="468.0" text="Database" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
             <font>
                 <Font size="18.0" />
             </font>
         </Label>
-        <Label alignment="BASELINE_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="101.0" text="First Name" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-        <Label alignment="BASELINE_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="100.0" text="Last Name" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-        <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="98.0" text="Enter First Name:" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-        <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="101.0" text="Enter Last Name:" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-        <ColorPicker fx:id="colorPicker" onAction="#changeBackground" GridPane.rowIndex="1" />
-        <ImageView fx:id="hiddenImage" fitHeight="94.0" fitWidth="102.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+        <Label alignment="BASELINE_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="101.0" text="First Name" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+        <Label alignment="BASELINE_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="100.0" text="Last Name" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+        <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="98.0" text="Enter First Name:" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="101.0" text="Enter Last Name:" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+        <ColorPicker fx:id="colorPicker" onAction="#changeBackground" GridPane.rowIndex="3" />
+        <ImageView fx:id="hiddenImage" fitHeight="94.0" fitWidth="102.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="5">
             <image>
                 <Image url="@/download.png" />
             </image>
         </ImageView>
-        <Button fx:id="appearButton" alignment="CENTER" mnemonicParsing="false" onAction="#imageAppear" stylesheets="@../myStyle.css" text="Appear" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-      <Button mnemonicParsing="false" stylesheets="@../myStyle.css" text="Button" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+        <Button fx:id="appearButton" alignment="CENTER" mnemonicParsing="false" onAction="#imageAppear" stylesheets="@../myStyle.css" text="Appear" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Circle fx:id="circle" fill="DODGERBLUE" onMouseEntered="#animateCircle" radius="34.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BASELINE" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pass over the circle" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
     </children>
 </GridPane>
