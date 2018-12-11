@@ -8,16 +8,17 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Database Project");
-        primaryStage.setScene(new Scene(root, 600, 250));
-        primaryStage.show();
-    }
+  //Define the UI window for this program.
+  @Override
+  public void start(Stage primaryStage) throws Exception {
+    Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+    primaryStage.setTitle("Database Project");
+    primaryStage.setScene(new Scene(root, 600, 250));
+    primaryStage.show();
+  }
 
-
-    public static void main(String[] args) {
-        launch(args);
-    }
+  //Main method which launches the program.
+  public static void main(String[] args) {
+    launch(args);
+  }
 }
