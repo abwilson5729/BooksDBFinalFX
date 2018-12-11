@@ -50,5 +50,5 @@ V.1.0.0 Initial Release, allows for input and read of database
 * Scenebuilder
 
 ## Grading
- * [Grading Rubric](https://www.google.com)
+ * [Grading Rubric](https://docs.google.com/spreadsheets/d/11ZnsCrG4qwPAeEa2Adm8mcNdT31ZSNbF-kJ6Tr8JKTg/edit?usp=sharing)
 
