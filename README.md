@@ -27,8 +27,9 @@ This was created for COP 3003 as a year end project.
 * Professor Vanselow
 
 ## History
-V.1.0.7 Added Circle shape and animated the fill<br />
+V.1.0.8 Added Slider and Opacity function <br />
 
+V.1.0.7 Added Circle shape and animated the fill<br />
 V.1.0.6 Added CSS scripts<br />
 V.1.0.5 Added Working Demonstration GIF<br />
 V.1.0.4 Added comments to all files<br />
