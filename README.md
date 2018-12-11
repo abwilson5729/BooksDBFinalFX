@@ -9,7 +9,7 @@ This was created for COP 3003 as a year end project.
 
 ## Demonstration
 
-![Sample GIF](https://github.com/abwilson5729/BooksDBFinalFX/blob/master/working.gif) 
+![Sample GIF](https://github.com/abwilson5729/BooksDBFinalFX/blob/master/src/Working.gif) 
 
 ## Built With
 
